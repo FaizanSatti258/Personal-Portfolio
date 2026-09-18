@@ -1,59 +1,154 @@
-// ==================== MOBILE NAVBAR ====================
+// ================================
+// MOBILE NAVBAR
+// ================================
 
 const menuBtn = document.querySelector(".menu-btn");
 const navLinks = document.querySelector(".nav-links");
 
 menuBtn.addEventListener("click", () => {
+
     navLinks.classList.toggle("active");
-});
 
+    const icon = menuBtn.querySelector("i");
 
-// ==================== CLOSE MENU AFTER CLICK ====================
-
-const navItems = document.querySelectorAll(".nav-links a");
-
-navItems.forEach((item) => {
-    item.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-    });
-});
-
-
-// ==================== NAVBAR SCROLL EFFECT ====================
-
-const header = document.querySelector("header");
-
-window.addEventListener("scroll", () => {
-
-    if (window.scrollY > 50) {
-        header.classList.add("scrolled");
+    if (navLinks.classList.contains("active")) {
+        icon.classList.remove("fa-bars");
+        icon.classList.add("fa-xmark");
     } else {
-        header.classList.remove("scrolled");
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
     }
 
 });
 
 
-// ==================== CONTACT FORM ====================
+// ================================
+// CLOSE MOBILE MENU
+// ================================
 
-const contactForm = document.querySelector(".contact-form form");
+const navItems = document.querySelectorAll(".nav-links a");
 
-contactForm.addEventListener("submit", (event) => {
+navItems.forEach((item) => {
 
-    event.preventDefault();
+    item.addEventListener("click", () => {
 
-    alert("Thank you! Your message has been submitted.");
+        navLinks.classList.remove("active");
 
-    contactForm.reset();
+        const icon = menuBtn.querySelector("i");
+
+        icon.classList.remove("fa-xmark");
+        icon.classList.add("fa-bars");
+
+    });
 
 });
 
 
-// ==================== CURRENT YEAR ====================
+// ================================
+// NAVBAR SCROLL EFFECT
+// ================================
 
-const footerText = document.querySelector(".footer p");
+const header = document.querySelector(".header");
 
-const currentYear = new Date().getFullYear();
+window.addEventListener("scroll", () => {
 
-footerText.innerHTML =
-    `© ${currentYear} Faizan Satti. All Rights Reserved.`;
+    if (window.scrollY > 50) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+
+// ================================
+// ACTIVE NAVIGATION
+// ================================
+
+const sections = document.querySelectorAll("section[id]");
+
+window.addEventListener("scroll", () => {
+
+    let currentSection = "";
+
+    sections.forEach((section) => {
+
+        const sectionTop = section.offsetTop - 150;
+        const sectionHeight = section.offsetHeight;
+
+        if (
+            window.scrollY >= sectionTop &&
+            window.scrollY < sectionTop + sectionHeight
+        ) {
+            currentSection = section.getAttribute("id");
+        }
+
+    });
+
+    navItems.forEach((link) => {
+
+        link.classList.remove("active");
+
+        if (
+            link.getAttribute("href") === `#${currentSection}`
+        ) {
+            link.classList.add("active");
+        }
+
+    });
+
+});
+
+
+// ================================
+// SCROLL REVEAL ANIMATION
+// ================================
+
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("show");
+
+                revealObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+revealElements.forEach((element) => {
+
+    revealObserver.observe(element);
+
+});
+
+
+// ================================
+// CURRENT YEAR
+// ================================
+
+const footerYear = document.querySelector(".footer-bottom p");
+
+if (footerYear) {
+
+    const currentYear = new Date().getFullYear();
+
+    footerYear.innerHTML =
+        `© ${currentYear} Faizan Satti. All Rights Reserved.`;
+
+}

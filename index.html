@@ -1,417 +1,692 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Faizan Satti | Web Developer</title>
 
-    <!-- CSS File -->
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- ==================== NAVBAR ==================== -->
-    <header>
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="header">
+
         <nav class="navbar">
 
-            <a href="#home" class="logo">Faizan Satti</a>
+            <a href="#home" class="logo">
+                <span>F</span> Faizan.
+            </a>
 
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+                <li>
+                    <a href="#home" class="active">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#resume">Resume</a>
+                </li>
+
             </ul>
 
-            <!-- Mobile Menu Button -->
+            <a href="#resume" class="nav-button">
+                My Resume
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+
             <button class="menu-btn" aria-label="Open Menu">
-                ☰
+                <i class="fa-solid fa-bars"></i>
             </button>
 
         </nav>
+
     </header>
 
 
-    <!-- ==================== HOME SECTION ==================== -->
-    <section id="home" class="hero">
+    <!-- ================= HOME ================= -->
 
-        <div class="hero-content">
+    <main>
 
-            <p class="hero-subtitle">Hello, I'm</p>
+        <section id="home" class="hero">
 
-            <h1>Faizan Satti</h1>
-
-            <h2>Information Technology Student & Web Developer</h2>
-
-            <p>
-                I am an IT student passionate about web development,
-                programming, and creating modern and user-friendly websites.
-            </p>
-
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View My Projects</a>
-                <a href="#contact" class="btn secondary-btn">Contact Me</a>
+            <div class="hero-background">
+                <div class="glow glow-one"></div>
+                <div class="glow glow-two"></div>
             </div>
 
-        </div>
+            <div class="hero-content reveal">
 
-        <div class="hero-image">
-            <!-- Add your profile image here later -->
-            <img src="images/profile.jpg" alt="Faizan Satti">
-        </div>
-
-    </section>
-
-
-    <!-- ==================== ABOUT SECTION ==================== -->
-    <section id="about" class="about section">
-
-        <div class="section-heading">
-            <p>Get To Know Me</p>
-            <h2>About Me</h2>
-        </div>
-
-        <div class="about-content">
-
-            <div class="about-text">
-
-                <h3>Who I Am</h3>
-
-                <p>
-                    My name is Faizan Satti. I am an Information Technology
-                    student with a strong interest in web development and
-                    system administration.
-                </p>
-
-                <p>
-                    I enjoy learning new technologies and building websites
-                    that are simple, responsive, and easy to use. I am
-                    continuously improving my skills in HTML, CSS, JavaScript,
-                    and other web technologies.
-                </p>
-
-                <h3>My Career Goal</h3>
-
-                <p>
-                    My goal is to become a skilled web developer and build
-                    professional web applications while continuously learning
-                    and improving my technical skills.
-                </p>
-
-            </div>
-
-            <div class="about-info">
-
-                <div class="info-box">
-                    <h4>Education</h4>
-                    <p>BS Information Technology</p>
+                <div class="availability">
+                    <span></span>
+                    Available for opportunities
                 </div>
 
-                <div class="info-box">
-                    <h4>Interest</h4>
-                    <p>Web Development & system administration</p>
+                <p class="hero-small">
+                    HELLO, I'M
+                </p>
+
+                <h1>
+                    Faizan <span>Satti</span>
+                </h1>
+
+                <h2>
+                    Information Technology Student
+                    <br>
+                    & <span>Web Developer</span>
+                </h2>
+
+                <p class="hero-description">
+                    I create modern, responsive and user-friendly websites
+                    using HTML, CSS and JavaScript. I am passionate about
+                    web development and continuously improving my technical skills.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn primary-btn">
+                        View My Work
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+
+                    <a href="#about" class="btn outline-btn">
+                        More About Me
+                    </a>
+
                 </div>
 
-                <div class="info-box">
-                    <h4>Goal</h4>
-                    <p>Professional Web Developer</p>
+                <div class="social-icons">
+
+                    <a href="#" target="_blank" aria-label="GitHub">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+
+                    <a href="#" target="_blank" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+
+                    <a href="#" target="_blank" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a href="#" target="_blank" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+
                 </div>
 
             </div>
 
-        </div>
 
-    </section>
+            <div class="hero-image-area reveal">
 
+                <div class="image-ring">
 
-    <!-- ==================== SKILLS SECTION ==================== -->
-    <section id="skills" class="skills section">
+                    <div class="image-inner">
 
-        <div class="section-heading">
-            <p>My Technical Skills</p>
-            <h2>Skills</h2>
-        </div>
+                        <img
+                            src="images/profile.jpg"
+                            alt="Faizan Satti">
 
-        <div class="skills-container">
+                    </div>
 
-            <div class="skill-card">
-                <h3>HTML5</h3>
-                <p>Web Structure</p>
+                </div>
+
+                <div class="floating-card card-one">
+                    <i class="fa-solid fa-code"></i>
+                    <div>
+                        <strong>Web</strong>
+                        <small>Development</small>
+                    </div>
+                </div>
+
+                <div class="floating-card card-two">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <div>
+                        <strong>BS-IT</strong>
+                        <small>Student</small>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>CSS3</h3>
-                <p>Web Styling</p>
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="about section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">01</span>
+
+                <div>
+                    <p>GET TO KNOW ME</p>
+                    <h2>About Me</h2>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>JavaScript</h3>
-                <p>Web Interactivity</p>
+
+            <div class="about-grid">
+
+                <div class="about-text reveal">
+
+                    <h3>
+                        Turning ideas into
+                        <span>digital experiences.</span>
+                    </h3>
+
+                    <p>
+                        My name is Faizan Satti. I am an Information Technology
+                        student with a strong interest in web development and
+                        programming.
+                    </p>
+
+                    <p>
+                        I enjoy creating clean, responsive and user-friendly
+                        websites. I am currently developing my skills in
+                        HTML, CSS, JavaScript and modern web technologies.
+                    </p>
+
+                    <p>
+                        My goal is to become a professional web developer and
+                        build useful web applications while continuously
+                        learning new technologies.
+                    </p>
+
+                </div>
+
+
+                <div class="about-cards reveal">
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div>
+                            <h4>Web Development</h4>
+                            <p>Building responsive websites</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+
+                        <div>
+                            <h4>Continuous Learning</h4>
+                            <p>Always improving my skills</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="about-card">
+
+                        <div class="about-icon">
+                            <i class="fa-solid fa-rocket"></i>
+                        </div>
+
+                        <div>
+                            <h4>Career Goal</h4>
+                            <p>Professional Web Developer</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>React</h3>
-                <p>Frontend Development</p>
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="skills section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">02</span>
+
+                <div>
+                    <p>WHAT I WORK WITH</p>
+                    <h2>My Skills</h2>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>Bootstrap</h3>
-                <p>Responsive Design</p>
+
+            <div class="skills-grid">
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-html5"></i>
+                    </div>
+                    <h3>HTML5</h3>
+                    <p>Semantic Web Structure</p>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <h3>CSS3</h3>
+                    <p>Modern Web Styling</p>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h3>JavaScript</h3>
+                    <p>Web Interactivity</p>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Frontend Development</p>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-bootstrap"></i>
+                    </div>
+                    <h3>Bootstrap</h3>
+                    <p>Responsive UI</p>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-github"></i>
+                    </div>
+                    <h3>Git & GitHub</h3>
+                    <p>Version Control</p>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h3>Python</h3>
+                    <p>Programming</p>
+                </div>
+
+
+                <div class="skill-card reveal">
+                    <div class="skill-icon">
+                        <i class="fa-solid fa-mobile-screen"></i>
+                    </div>
+                    <h3>Responsive Design</h3>
+                    <p>Mobile Friendly UI</p>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>Git & GitHub</h3>
-                <p>Version Control</p>
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section id="projects" class="projects section">
+
+            <div class="section-heading reveal">
+
+                <span class="section-number">03</span>
+
+                <div>
+                    <p>MY RECENT WORK</p>
+                    <h2>Featured Projects</h2>
+                </div>
+
             </div>
 
-            <div class="skill-card">
-                <h3>Python</h3>
-                <p>Programming</p>
-            </div>
 
-            <div class="skill-card">
-                <h3>Responsive Design</h3>
-                <p>Mobile Friendly Websites</p>
-            </div>
-
-        </div>
-
-    </section>
+            <div class="projects-grid">
 
 
-    <!-- ==================== PROJECTS SECTION ==================== -->
-    <section id="projects" class="projects section">
+                <!-- PROJECT 1 -->
 
-        <div class="section-heading">
-            <p>My Recent Work</p>
-            <h2>Projects</h2>
-        </div>
+                <article class="project-card reveal">
 
-        <div class="projects-container">
+                    <div class="project-top">
 
-            <!-- Project 1 -->
-            <div class="project-card">
+                        <div class="project-number">
+                            01
+                        </div>
 
-                <div class="project-content">
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
 
-                    <h3>Personal Portfolio Website</h3>
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <h3>Personal Portfolio</h3>
 
                     <p>
                         A modern and responsive personal portfolio website
-                        designed to showcase my skills, projects, education,
-                        and contact information.
+                        designed to showcase my skills, projects, education
+                        and professional profile.
                     </p>
 
-                    <p>
-                        <strong>Technologies:</strong>
-                        HTML, CSS, JavaScript
-                    </p>
+                    <div class="tech-stack">
 
-                    <div class="project-links">
-                        <a href="#" target="_blank">GitHub</a>
-                        <a href="#" target="_blank">Live Demo</a>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
                     </div>
 
-                </div>
+                    <div class="project-links">
+
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                        <a href="#" target="_blank">
+                            Live Demo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 2 -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-utensils"></i>
+                    </div>
+
+                    <h3>Food Delivery Website</h3>
+
+                    <p>
+                        A responsive food delivery website with food
+                        categories, product cards, shopping cart and
+                        user-friendly interface.
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                        <a href="#" target="_blank">
+                            Live Demo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 3 -->
+
+                <article class="project-card reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-car"></i>
+                    </div>
+
+                    <h3>Car Rental Platform</h3>
+
+                    <p>
+                        A modern car rental website featuring car listings,
+                        search, filters, booking functionality and responsive
+                        user interface.
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                        <a href="#" target="_blank">
+                            Live Demo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 4 -->
+
+                <article class="project-card featured-project reveal">
+
+                    <div class="project-top">
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                        <span class="featured-label">
+                            Featured
+                        </span>
+
+                    </div>
+
+                    <div class="project-icon">
+                        <i class="fa-solid fa-dumbbell"></i>
+                    </div>
+
+                    <h3>FitCore Gym Management System</h3>
+
+                    <p>
+                        A modern gym management system designed to manage
+                        members, trainers, memberships, attendance, workouts,
+                        payments and user profiles.
+                    </p>
+
+                    <div class="tech-stack">
+
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a href="#" target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+
+                        <a href="#" target="_blank">
+                            Live Demo
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </article>
 
             </div>
 
+        </section>
 
-            <!-- Project 2 -->
-            <div class="project-card">
 
-                <div class="project-content">
+        <!-- ================= RESUME ================= -->
 
-                    <h3>Student Registration System</h3>
+        <section id="resume" class="resume section">
+
+            <div class="resume-box reveal">
+
+                <div class="resume-icon">
+                    <i class="fa-solid fa-file-lines"></i>
+                </div>
+
+                <div class="resume-text">
+
+                    <p>MY RESUME</p>
+
+                    <h2>
+                        Let's take a look at my
+                        <span>experience.</span>
+                    </h2>
 
                     <p>
-                        A simple student registration website that allows
-                        users to enter and manage student information through
-                        a user-friendly interface.
+                        Download my resume to learn more about my education,
+                        skills, projects and experience.
                     </p>
-
-                    <p>
-                        <strong>Technologies:</strong>
-                        HTML, CSS, JavaScript
-                    </p>
-
-                    <div class="project-links">
-                        <a href="#" target="_blank">GitHub</a>
-                        <a href="#" target="_blank">Live Demo</a>
-                    </div>
 
                 </div>
 
+                <a
+                    href="resume/Faizan_Satti_Resume.pdf"
+                    class="btn primary-btn"
+                    download>
+
+                    Download Resume
+
+                    <i class="fa-solid fa-download"></i>
+
+                </a>
+
             </div>
 
+        </section>
 
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-logo">
+            <span>F</span> Faizan.
         </div>
 
-    </section>
+        <p>
+            Designing and building modern web experiences.
+        </p>
 
+        <div class="footer-socials">
 
-    <!-- ==================== RESUME SECTION ==================== -->
-    <section id="resume" class="resume section">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>
 
-        <div class="resume-content">
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-linkedin-in"></i>
+            </a>
 
-            <p>Want to Know More?</p>
-
-            <h2>My Resume</h2>
-
-            <p>
-                Download my resume to learn more about my education,
-                technical skills, projects, and experience.
-            </p>
-
-            <a href="resume/Faizan_Satti_Resume.pdf"
-               class="btn"
-               download>
-                Download Resume
+            <a href="#" target="_blank">
+                <i class="fa-brands fa-facebook-f"></i>
             </a>
 
         </div>
 
-    </section>
+        <div class="footer-bottom">
 
-
-    <!-- ==================== CONTACT SECTION ==================== -->
-    <section id="contact" class="contact section">
-
-        <div class="section-heading">
-            <p>Let's Connect</p>
-            <h2>Contact Me</h2>
-        </div>
-
-        <div class="contact-container">
-
-            <!-- Contact Information -->
-            <div class="contact-info">
-
-                <h3>Get In Touch</h3>
-
-                <p>
-                    Feel free to contact me if you want to discuss a project,
-                    collaboration, or anything related to web development.
-                </p>
-
-                <div class="contact-item">
-                    <h4>Email</h4>
-                    <a href="mailto:your-email@example.com">
-                        sattifaizan258@gmail.com
-                    </a>
-                </div>
-
-                <div class="contact-item">
-                    <h4>Phone</h4>
-                    <a href="tel:+923000000000">
-                        +92 3454538498
-                    </a>
-                </div>
-
-                <!-- Social Media -->
-                <div class="social-links">
-
-                    <a href="#" target="_blank">
-                        GitHub
-                    </a>
-
-                    <a href="#" target="_blank">
-                        LinkedIn
-                    </a>
-
-                    <a href="#" target="_blank">
-                        Facebook
-                    </a>
-
-                    <a href="#" target="_blank">
-                        Instagram
-                    </a>
-
-                </div>
-
-            </div>
-
-
-            <!-- Contact Form -->
-            <div class="contact-form">
-
-                <form action="#" method="post">
-
-                    <div class="form-group">
-                        <label for="name">Your Name</label>
-                        <input
-                            type="text"
-                            id="name"
-                            name="name"
-                            placeholder="Enter your name"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">Your Email</label>
-                        <input
-                            type="email"
-                            id="email"
-                            name="email"
-                            placeholder="Enter your email"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="subject">Subject</label>
-                        <input
-                            type="text"
-                            id="subject"
-                            name="subject"
-                            placeholder="Enter subject"
-                            required>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea
-                            id="message"
-                            name="message"
-                            rows="6"
-                            placeholder="Write your message..."
-                            required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn">
-                        Send Message
-                    </button>
-
-                </form>
-
-            </div>
+            <p>
+                © 2026 Faizan Satti. All Rights Reserved.
+            </p>
 
         </div>
-
-    </section>
-
-
-    <!-- ==================== FOOTER ==================== -->
-    <footer class="footer">
-
-        <p>
-            © 2026 Faizan Satti. All Rights Reserved.
-        </p>
-
-        <p>
-            Designed & Developed by Faizan Satti
-        </p>
 
     </footer>
 
 
-    <!-- JavaScript File -->
+    <!-- JavaScript -->
     <script src="script.js"></script>
-
 
 </body>
 </html>
